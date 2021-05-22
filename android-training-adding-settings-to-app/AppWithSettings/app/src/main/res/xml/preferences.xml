@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="@string/switch_summary"
+        android:title="@string/switch_title" />
+
+    <PreferenceCategory android:title="@string/messages_header">
+
+        <EditTextPreference
+            android:key="signature"
+            android:title="@string/signature_title"/>
+
+        <ListPreference
+            android:defaultValue="reply"
+            android:entries="@array/reply_entries"
+            android:entryValues="@array/reply_values"
+            android:key="reply"
+            android:title="@string/reply_title"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
